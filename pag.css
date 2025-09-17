@@ -1,5 +1,5 @@
-body {
-    background-color: #f8c9c9; /* Fundo rosa claro */
+.corpo1 {
+    background-color: #f8c9c9; 
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -7,8 +7,25 @@ body {
     height: 100vh;
     margin: 0;
 }
-
-.container {
+.corpo2 {
+    background-color: #be7272; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.corpo3 {
+    background-color: #272f58; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container1 {
     background-color: #f6dada;
     padding: 20px;
     border-radius: 12px;
@@ -16,7 +33,22 @@ body {
     text-align: center;
     width: 350px;
 }
-
+.container2 {
+    background-color: #dbacac;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 350px;
+}
+.container3 {
+    background-color: #95a2b3c4;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 350px;
+}
 .tag {
     background-color: #e74c3c;
     color: white;
@@ -72,4 +104,8 @@ body {
 .roxo {
     background-color: #9b59b6;
     color: white;
+}
+.amarelo {
+    background-color: yellow;
+    color: #000;
 }
