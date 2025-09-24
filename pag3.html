@@ -3,24 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pergunta 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <title>Pergunta 3</title>
     <link rel="stylesheet" href="pag.css">
+    <style> 
+    #proxima {
+        display : none ;
+    }
+    #proxim{
+        display: none;
+    }
+    </style>
 </head>
 <body class="corpo3">
     <div class="container3">
         <div class="pergunta">
             <span class="tag">pergunta 2</span>
             <img src="venon.png" alt="Imagem do venom">
-            <p class="questao">oque ocorre nessa imagem  ?</p>
+            <p class="questao" id="211">oque ocorre nessa imagem  ?</p>
 
-            <div class="botoes">
-                <button class="btn laranja"onclick="respostaEscolhida(0)">Parece tudo normal</button>
-                <button class="btn amarelo"onclick="respostaEscolhida(1)">Despertou o "haki" muito jovem</button>
-                <button class="btn azul"onclick="respostaEscolhida(2)">É o remake do filme do Venom</button>
-                <button class="btn roxo"onclick="respostaEscolhida(3)">Acho que é um gremlin</button>
+            <div class="botoes" id="711">
+                <button class="btn laranja" id="33" onclick="errou()">Parece tudo normal</button>
+                <button class="btn amarelo" id="34" onclick="errou()">Despertou o "haki" muito jovem</button>
+                <button class="btn azul" id="23" onclick="acerto()">É o remake do filme do Venom</button>
+                <button class="btn roxo" id="35" onclick="errou()">Acho que é um gremlin</button>
             </div>
         </div>
+        <button class="pr" id="proxim"><a href="finalizado.html">Proxima </a> </button>
+        <button class="pr" id="proxima"><a href="finalizado.html">Proxima</a></button>
     </div>
+    <script>
+    function errou(){
+        document.getElementById("711").innerHTML="INFELIZMENTE VOCÊ ERROU";
+        document.getElementById("211").innerHTML="   "
+        
+    }
+    function acerto(){
+        document.getElementById("711").innerHTML="VOCÊ ACERTOU"
+        document.getElementById("211").innerHTML="      "
+    }
+    const botaod = document.getElementById('33');
+    const botaot = document.getElementById('proxima');
+    botaod.addEventListener('click', () =>{
+        botaot.style.display = 'inline-block';
+    });
+    const botaoh = document.getElementById('34');
+    const botaog = document.getElementById('proxima');
+    botaoh.addEventListener('click', () =>{
+        botaog.style.display = 'inline-block';
+    });const botaoe = document.getElementById('35');
+    const botaop = document.getElementById('proxima');
+    botaoe.addEventListener('click', () =>{
+        botaop.style.display = 'inline-block';
+    });
+    const botaoc = document.getElementById('23');
+    const botaopr = document.getElementById('proxim');
+    botaoc.addEventListener('click', () =>{
+        botaopr.style.display = 'inline-block';
+    });
+ </script>
 </body>
 </html>
  
